@@ -762,5 +762,40 @@
             }
         ]
     },
-
+    {
+        "era": "Future era",
+        "techs": [
+            {
+                "name": "Space Colonization",
+                "row": 2,
+                "prerequisites": ["Globalization"],
+                "uniques": ["Establish colonies on other planets"]
+            },
+            {
+                "name": "Temporal Manipulation",
+                "row": 4,
+                "prerequisites": ["Nanotechnology", "Particle Physics"],
+                "uniques": ["Unlocks time travel technology"]
+            },
+            {
+                "name": "Dimensional Rifts",
+                "row": 6,
+                "prerequisites": ["Temporal Manipulation", "Nuclear Fusion"],
+                "uniques": ["Access alternate dimensions"]
+            },
+            {
+                "name": "Quantum Reality",
+                "row": 8,
+                "prerequisites": ["Dimensional Rifts", "Artificial Intelligence"],
+                "uniques": ["Control reality at a quantum level"]
+            },
+            {
+                "name": "Transcendence",
+                "row": 10,
+                "prerequisites": ["Quantum Reality"],
+                "uniques": ["Achieve a state of higher existence"]
+            }
+        ]
+    }
+]
 ]
