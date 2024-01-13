@@ -14,6 +14,18 @@
                     "Starting tech",
                     "Notified of new Barbarian encampments"
                 ]
+            },
+            {
+                "name": "Hunting",
+                "row": 1,
+                "prerequisites": [],
+                "uniques": ["Unlocks the ability to build Camp improvements"]
+            },
+            {
+                "name": "Fishing",
+                "row": 3,
+                "prerequisites": [],
+                "uniques": ["Unlocks the ability to build Fishing Boats improvements"]
             }
         ]
     },
@@ -44,6 +56,12 @@
                 "name": "Mining",
                 "row": 9,
                 "prerequisites": ["Agriculture"],
+            },
+            {
+                "name": "Sculpture",
+                "row": 3,
+                "prerequisites": ["Pottery"],
+                "uniques": ["Unlocks the ability to build Stone Works improvements"]
             }
         ]
     },
@@ -92,6 +110,12 @@
                 "name": "Bronze Working",
                 "row": 10,
                 "prerequisites": ["Mining"],
+            },
+            {
+                "name": "Ceramics",
+                "row": 4,
+                "prerequisites": ["Calendar"],
+                "uniques": ["Unlocks the ability to build Granary improvements"]
             }
         ]
     },
@@ -114,18 +138,22 @@
                 "name": "Horseback Riding",
                 "row": 5,
                 "prerequisites": ["Trapping","The Wheel"],
-
             },
             {
                 "name": "Mathematics",
                 "row": 7,
                 "prerequisites": ["The Wheel"],
-
             },
             {
                 "name": "Construction",
                 "row": 9,
                 "prerequisites": ["Masonry","The Wheel"],
+            },
+            {
+                "name": "Sculpture",
+                "row": 3,
+                "prerequisites": ["Optics"],
+                "uniques": ["Unlocks the ability to build Great Artisan improvements"]
             }
         ]
     },
@@ -163,7 +191,13 @@
             {
                 "name": "Iron Working",
                 "row": 10,
-                "prerequisites": ["Bronze Working"],
+                "prerequisites": ["Mining"],
+            },
+            {
+                "name": "Literature",
+                "row": 4,
+                "prerequisites": ["Philosophy"],
+                "uniques": ["Unlocks the ability to build Libraries"]
             }
         ]
     },
@@ -194,6 +228,18 @@
                 "name": "Metal Casting",
                 "row": 9,
                 "prerequisites": ["Engineering","Iron Working"],
+            },
+                        {
+                "name": "Alchemy",
+                "row": 3,
+                "prerequisites": ["Theology"],
+                "uniques": ["Unlocks the ability to build Alchemy Labs"]
+            },
+            {
+                "name": "Astronomy",
+                "row": 6,
+                "prerequisites": ["Theology","Optics"],
+                "uniques": ["Unlocks the ability to build Observatories"]
             }
         ]
     },
@@ -238,13 +284,25 @@
                 "prerequisites": ["Metal Casting"],
             },
             {
-                "name": "Steel",
+                "name": "Printing Press",
                 "row": 10,
                 "prerequisites": ["Metal Casting"],
+            },
+            {
+                "name": "Cartography",
+                "row": 5,
+                "prerequisites": ["Compass"],
+                "uniques": ["Unlocks the ability to build Lighthouses"]
+            },
+            {
+                "name": "Gunpowder",
+                "row": 7,
+                "prerequisites": ["Physics"],
+                "uniques": ["Unlocks the ability to build Gunpowder Empires"]
             }
         ]
     },
-    {
+        {
         "columnNumber": 7,
         "era": "Renaissance era",
         "techCost": 780,
@@ -265,7 +323,7 @@
             {
                 "name": "Banking",
                 "row": 6,
-                "prerequisites": ["Chivalry","Education"],,
+                "prerequisites": ["Chivalry","Education"],
                 "uniques": ["Provides [1] [Trade Route]"]
             },
             {
@@ -276,7 +334,24 @@
             {
                 "name": "Gunpowder",
                 "row": 10,
-                "prerequisites": ["Physics","Steel"],
+                "prerequisites": ["Physics","Printing Press"],
+            },
+            {
+                "name": "Economics",
+                "row": 7,
+                "prerequisites": ["Banking","Printing Press"],
+            },
+            {
+                "name": "Navigation",
+                "row": 2,
+                "prerequisites": ["Astronomy"],
+                "uniques": ["[+1] Movement <for [Embarked] units>"],
+            },
+            {
+                "name": "Architecture",
+                "row": 4,
+                "prerequisites": ["Acoustics","Banking"],
+                "uniques": ["Unlocks the ability to build Landmarks"]
             }
         ]
     },
@@ -297,6 +372,7 @@
                 "name": "Architecture",
                 "row": 4,
                 "prerequisites": ["Acoustics","Banking"],
+                "uniques": ["Unlocks the ability to build Landmarks"]
             },
             {
                 "name": "Economics",
@@ -312,6 +388,31 @@
                 "name": "Chemistry",
                 "row": 10,
                 "prerequisites": ["Gunpowder"],
+            },
+            {
+                "name": "Scientific Theory",
+                "row": 4,
+                "prerequisites": ["Architecture","Economics"],
+            },
+            {
+                "name": "Industrialization",
+                "row": 6,
+                "prerequisites": ["Economics"],
+            },
+            {
+                "name": "Rifling",
+                "row": 7,
+                "prerequisites": ["Metallurgy"],
+            },
+            {
+                "name": "Military Science",
+                "row": 9,
+                "prerequisites": ["Metallurgy","Chemistry"],
+            },
+            {
+                "name": "Fertilizer",
+                "row": 10,
+                "prerequisites": ["Chemistry"],
             }
         ]
     },
@@ -351,6 +452,26 @@
                 "name": "Fertilizer",
                 "row": 10,
                 "prerequisites": ["Chemistry"],
+            },
+            {
+                "name": "Ballistics",
+                "row": 4,
+                "prerequisites": ["Rifling","Scientific Theory"],
+            },
+            {
+                "name": "Electricity",
+                "row": 5,
+                "prerequisites": ["Electricity","Rifling"],
+            },
+            {
+                "name": "Steam Power",
+                "row": 6,
+                "prerequisites": ["Industrialization","Rifling"],
+            },
+            {
+                "name": "Dynamite",
+                "row": 9,
+                "prerequisites": ["Fertilizer","Military Science"],
             }
         ]
     },
@@ -369,11 +490,6 @@
             },
             {
                 "name": "Electricity",
-                "row": 3,
-                "prerequisites": ["Scientific Theory"],
-            },
-            {
-                "name": "Steam Power",
                 "row": 6,
                 "prerequisites": ["Industrialization","Rifling"],
             },
@@ -381,6 +497,43 @@
                 "name": "Dynamite",
                 "row": 9,
                 "prerequisites": ["Fertilizer","Military Science"],
+            },
+            {
+                "name": "Radio",
+                "row": 10,
+                "prerequisites": ["Steam Power","Electricity"],
+            },
+            {
+                "name": "Plastics",
+                "row": 3,
+                "prerequisites": ["Radio","Biology"],
+                "uniques": ["Unlocks the ability to build Research Labs"]
+            },
+            {
+                "name": "Electronics",
+                "row": 5,
+                "prerequisites": ["Radio", "Biology"],
+            },
+            {
+                "name": "Ballistics",
+                "row": 6,
+                "prerequisites": ["Dynamite"],
+            },
+            {
+                "name": "Combustion",
+                "row": 8,
+                "prerequisites": ["Dynamite"],
+            },
+            {
+                "name": "Flight",
+                "row": 10,
+                "prerequisites": ["Radio"],
+            },
+            {
+                "name": "Refining",
+                "row": 7,
+                "prerequisites": ["Combustion","Plastics"],
+                "uniques": ["Unlocks the ability to build Oil Refineries"]
             }
         ]
     },
@@ -397,25 +550,30 @@
                 "prerequisites": ["Biology", "Electricity"],
             },
             {
-                "name": "Radio",
-                "row": 3,
-                "prerequisites": ["Electricity"],
-            },
-            {
-                "name": "Replaceable Parts",
+                "name": "Robotics",
                 "row": 4,
-                "prerequisites": ["Electricity","Steam Power"],
+                "prerequisites": ["Plastics", "Flight"],
             },
             {
-                "name": "Flight",
+                "name": "Telecommunications",
                 "row": 6,
-                "prerequisites": ["Steam Power"],
+                "prerequisites": ["Refining", "Robotics"],
             },
             {
-                "name": "Railroads",
+                "name": "Satellites",
                 "row": 8,
-                "prerequisites": ["Steam Power","Dynamite"],
-                "uniques": ["Provides [1] [Trade Route]"]
+                "prerequisites": ["Telecommunications"],
+            },
+            {
+                "name": "Nanotechnology",
+                "row": 9,
+                "prerequisites": ["Robotics"],
+            },
+            {
+                "name": "Lasers",
+                "row": 10,
+                "prerequisites": ["Robotics"],
+                "uniques": ["Unlocks the ability to build Laser Stations"]
             }
         ]
     },
@@ -432,19 +590,21 @@
                 "prerequisites": ["Radio","Replaceable Parts"],
             },
             {
-                "name": "Electronics",
+                "name": "Nuclear Power",
                 "row": 5,
-                "prerequisites": ["Replaceable Parts", "Flight"],
+                "prerequisites": ["Satellites","Robotics","Advanced Ballistics"],
             },
             {
-                "name": "Ballistics",
+                "name": "Computers",
                 "row": 6,
-                "prerequisites": ["Flight"],
+                "prerequisites": ["Robotics","Telecommunications"],
+                "uniques": ["Unlocks the ability to build Supercomputers"]
             },
             {
-                "name": "Combustion",
+                "name": "Advanced Robotics",
                 "row": 8,
-                "prerequisites": ["Railroads"],
+                "prerequisites": ["Computers","Robotics"],
+                "uniques": ["Unlocks the ability to build Advanced Robotics Factories"]
             }
         ]
     },
@@ -456,25 +616,27 @@
         "wonderCost": 1250,
         "techs": [
             {
-                "name": "Pharmaceuticals",
+                "name": "Genetic Engineering",
                 "row": 2,
                 "prerequisites": ["Plastics","Refrigeration"],
-                "uniques": ["Provides [1] [Trade Route]"]
+                "uniques": ["Unlocks the ability to build Genetic Labs"]
             },
             {
-                "name": "Atomic Theory",
+                "name": "Quantum Computing",
                 "row": 4,
-                "prerequisites": ["Plastics","Electronics"],
+                "prerequisites": ["Computers","Advanced Robotics"],
+                "uniques": ["Unlocks the ability to build Quantum Computers"]
             },
             {
-                "name": "Radar",
+                "name": "Fusion Power",
                 "row": 6,
-                "prerequisites": ["Ballistics","Electronics"],
+                "prerequisites": ["Nuclear Power"],
             },
             {
-                "name": "Combined Arms",
+                "name": "Advanced Materials",
                 "row": 8,
-                "prerequisites": ["Ballistics","Combustion"],
+                "prerequisites": ["Computers","Advanced Robotics"],
+                "uniques": ["Unlocks the ability to build Advanced Materials Plants"]
             }
         ]
     },
@@ -488,22 +650,23 @@
             {
                 "name": "Ecology",
                 "row": 2,
-                "prerequisites": ["Atomic Theory","Pharmaceuticals"],
+                "prerequisites": ["Genetic Engineering","Refrigeration"],
             },
             {
                 "name": "Nuclear Fission",
                 "row": 4,
-                "prerequisites": ["Atomic Theory","Radar"],
+                "prerequisites": ["Fusion Power","Quantum Computing"],
             },
             {
-                "name": "Rocketry",
+                "name": "Robot Warfare",
                 "row": 6,
-                "prerequisites": ["Radar"],
+                "prerequisites": ["Quantum Computing"],
+                "uniques": ["Unlocks the ability to build Robot Armies"]
             },
             {
-                "name": "Computers",
+                "name": "Molecular Biology",
                 "row": 8,
-                "prerequisites": ["Combined Arms","Radar"],
+                "prerequisites": ["Genetic Engineering","Nuclear Fission"],
             }
         ]
     },
@@ -527,23 +690,35 @@
             {
                 "name": "Advanced Ballistics",
                 "row": 5,
-                "prerequisites": ["Nuclear Fission","Rocketry"],
+                "prerequisites": ["Nuclear Fission","Robot Warfare"],
             },
             {
                 "name": "Satellites",
                 "row": 6,
-                "prerequisites": ["Rocketry"],
+                "prerequisites": ["Robot Warfare"],
                 "uniques": ["Reveals the entire map"],
             },
             {
                 "name": "Robotics",
                 "row": 7,
-                "prerequisites": ["Rocketry","Computers"],
+                "prerequisites": ["Robot Warfare","Mobile Tactics"],
             },
             {
                 "name": "Lasers",
                 "row": 8,
-                "prerequisites": ["Computers"],
+                "prerequisites": ["Robotics"],
+            },
+            {
+                "name": "Artificial Intelligence",
+                "row": 9,
+                "prerequisites": ["Mobile Tactics","Quantum Computing"],
+                "uniques": ["Unlocks the ability to build AI Research Centers"]
+            },
+            {
+                "name": "Biotechnology",
+                "row": 10,
+                "prerequisites": ["Artificial Intelligence","Molecular Biology"],
+                "uniques": ["Unlocks the ability to build Biotech Labs"]
             }
         ]
     },
@@ -578,22 +753,14 @@
                 "name": "Stealth",
                 "row": 7,
                 "prerequisites": ["Robotics","Lasers"],
+            },
+            {
+                "name": "Space Race",
+                "row": 9,
+                "prerequisites": ["Nuclear Fusion","Globalization"],
+                "uniques": ["Win the game by completing the Apollo Program"]
             }
         ]
     },
-    {
-        "columnNumber": 17,
-        "era": "Information era",
-        "techCost": 9500,
-        "buildingCost": 750,
-        "wonderCost": 1250,
-        "techs": [
-            {
-                "name": "Future Tech",
-                "row": 5,
-                "prerequisites": ["Nanotechnology","Particle Physics","Nuclear Fusion","Stealth"],
-                "uniques": ["Who knows what the future holds?","Can be continually researched"],
-            }
-        ]
-    }
+
 ]
